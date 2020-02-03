@@ -1,0 +1,237 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap);* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background: #121b27;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body,
+input,
+button {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.user-data {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin-top: 2px;
+}
+
+.user-data .label-top {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+.input-user {
+  -webkit-box-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.input-user input {
+  width: 60%;
+  padding: 15px 10px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+
+.error-user-data {
+  margin-top: 0px !important;
+}
+
+.error-input-user {
+  -webkit-box-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.error-input-user .error-msg {
+  width: 60%;
+  padding: 5px 5px;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  color: red;
+  text-align: center;
+}
+
+.results {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-align: center;
+          align-items: center;
+  height: 150px;
+}
+
+.hand {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  min-height: 60%;
+}
+
+.cards-label {
+  height: 20px;
+  font-size: 18px;
+  color: #ccc;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: flex;
+  min-width: 20%;
+  min-height: 77px;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+button.btn {
+  border: 2;
+  border-radius: 2px;
+  width: 200px;
+  height: 80px;
+  padding: 0 20px;
+  font-size: 35px;
+  font-weight: bold;
+  background: transparent;
+  border-color: #0078fd;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+
+button.btn:hover {
+  -webkit-transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  background: #0078fd;
+}
+
+button.btn.play-again {
+  font-size: 25px !important;
+}
+
+.message {
+  display: -webkit-box;
+  display: flex;
+  height: 80px;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.message .text {
+  display: -webkit-box;
+  display: flex;
+  width: 60%;
+  padding: 20px;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  border: 1px solid #ccc;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.message .text.score {
+  width: 40%;
+  padding: 15px;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.label {
+  color: #fff;
+  font-size: 20pt;
+  font-style: italic;
+  font-weight: bold;
+  vertical-align: top;
+  padding-left: 10px;
+}
+
+#leaderboard {
+  text-align: center;
+  background-color: #b6b6b6;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#leaderboard td,
+#leaderboard th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#leaderboard tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#leaderboard tr:hover {
+  background-color: #ddd;
+}
+
+#leaderboard th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #062754;
+  color: white;
+}
+
