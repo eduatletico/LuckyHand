@@ -56176,6 +56176,7 @@ function TableData() {
     value: name,
     minLength: 1,
     debounceTimeout: 5,
+    disabled: textResult !== "",
     placeholder: "Type your name",
     onChange: function onChange(event) {
       return handleChangeName(event.target.value);
@@ -56186,6 +56187,7 @@ function TableData() {
     value: cards,
     minLength: 1,
     debounceTimeout: 5,
+    disabled: textResult !== "",
     placeholder: "Type your cards",
     onChange: function onChange(event) {
       return handleChangeCards(event.target.value);

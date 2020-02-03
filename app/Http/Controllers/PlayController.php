@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Result as ResultModel;
 use App\User as UserModel;
-use App\Http\Controllers\UserController;
 use App\Rules\Hand;
 use App\Services\HandService;
 
@@ -31,8 +30,7 @@ class PlayController extends Controller
 
     $scores = $this->handService->getScores($userHand, $genHand);
 
-    $userController = new UserController();
-    $user = $userController->getUserByName($request->user_name);
+    $user = UserModel::where('name', $request->user_name)->first();
     if (!$user) {
       $user = new UserModel();
       $user->name = $request->user_name;

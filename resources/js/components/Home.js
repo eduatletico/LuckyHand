@@ -120,6 +120,7 @@ export default function TableData() {
             value={name}
             minLength={1}
             debounceTimeout={5}
+            disabled={textResult!==""}
             placeholder="Type your name"
             onChange={event => handleChangeName(event.target.value)}
           />
@@ -129,6 +130,7 @@ export default function TableData() {
             value={cards}
             minLength={1}
             debounceTimeout={5}
+            disabled={textResult!==""}
             placeholder="Type your cards"
             onChange={event => handleChangeCards(event.target.value)}
           />
