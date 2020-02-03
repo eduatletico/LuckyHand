@@ -45,12 +45,12 @@ $ git clone https://github.com/eduatletico/LuckyHand.git
 ### Usage
 This assumes that you already configured your database on .env file
 
-```bash
-cd LuckyHand
-composer install
-php artisan key:generate
-php artisan migrate
-php -S localhost:8000 -t public
+```
+$ cd LuckyHand
+$ composer install
+$ php artisan key:generate
+$ php artisan migrate
+$ php -S localhost:8000 -t public
 ```
 
 ### Test
