@@ -35,6 +35,13 @@ Your task is to create a Laravel application using an API & relational database 
 #### Submission:
 * Create a public repo on your Github account and send us the link
 
+### Installation
+Clone the GitHub repository, install the dependencies and start the server
+
+```
+$ git clone https://github.com/eduatletico/LuckyHand.git
+```
+
 ### Usage
 This assumes that you already configured your database on .env file
 
